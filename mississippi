@@ -1,8 +1,13 @@
-string='mississippi'
-mystr={}
-for i in string:
-  if i in mystr:
+import operator
+def myst(string):  
+ mystr={}
+ for i in string:
+   if i in mystr:
     mystr[i]+=1
-  else:
+   else:
     mystr[i]=1
-print(mystr)
+ sorted_mystr = dict(sorted(mystr.items(), key=operator.itemgetter(1),reverse=True))
+ return sorted_mystr
+
+string='mississippi'
+print(myst(string))
