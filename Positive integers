@@ -1,0 +1,6 @@
+input=eval(input("enter the list of numbers"))
+for i in input:
+  if i>0:
+    print(i,end=" ")
+  else:
+    continue
