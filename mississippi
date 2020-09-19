@@ -1,0 +1,8 @@
+string='mississippi'
+mystr={}
+for i in string:
+  if i in mystr:
+    mystr[i]+=1
+  else:
+    mystr[i]=1
+print(mystr)
